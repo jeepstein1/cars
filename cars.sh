@@ -21,13 +21,8 @@ do
  		     read m
 		     echo "Enter a model";
 		     read o
-		     car =""
-		     car +=$y
-		     car +=":"
-		     car +=$m
-		     car +=":"
-		     car +=$o
-		     echo $car >> My_old_cars.txt;;
+	
+		     echo $y$m$o >> My_old_cars.txt;;
 		"2") sort My_old_cars.txt
 		     echo cat My_old_cars.txt;;
 		"3") echo "Goodbye!";;
