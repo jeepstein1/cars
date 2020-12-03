@@ -3,11 +3,12 @@
 #Jenny Epstein
 #December 2, 2020
 e=3
+car=
 echo "Enter the number 1 to enter a new car"
 echo "Enter the number 2 to display the list of cars"
 echo "Enter the number 3 to quit and exit the program"
 read n;
-
+car=""
 while [ "$n" -lt "$e" ]
 do 
 	
@@ -18,7 +19,11 @@ do
  		     read m
 		     echo "Enter a model";
 		     read o
-		     car +=y:m:o
+		     car +=y
+		     car +=":"
+		     car +=m
+		     car +=":"
+		     car +=o
 		     echo $car >> My_old_cars.txt;;
 		"2") echo cat My_old_cars.txt;;
 		"3") echo "Goodbye!";;
