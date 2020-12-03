@@ -18,7 +18,7 @@ do
  		     read m
 		     echo "Enter a model"
 		     read o
-		     $string="$y:$m:$o"
+		     string="$y:$m:$o"
 	
 		     echo $"string" >> My_old_cars.txt;;
 		"2") sort My_old_cars.txt;;
