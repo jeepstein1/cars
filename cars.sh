@@ -18,6 +18,6 @@ do
 		     echo car >> My_old_cars.txt;;
 		"2") echo cat My_old_cars.txt;;
 		"3") echo "Goodbye!";;
-	
+	esac	
 done
 
