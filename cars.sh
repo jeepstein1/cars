@@ -9,11 +9,7 @@ echo "Enter the number 3 to quit and exit the program"
 read n;
 while [ "$n" -lt "$e" ]
 do 
-	echo "Enter the number 1 to enter a new car"
-	echo "Enter the number 2 to display the list of cars"
-	echo "Enter the number 3 to quit and exit the program"
-	read n;
-	car =""
+	$car =""
 	case "$n" in
 		"1") echo "Enter a year"; read y
 		     echo "Enter a make"; read m
