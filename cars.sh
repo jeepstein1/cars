@@ -7,10 +7,13 @@ echo "Enter the number 1 to enter a new car"
 echo "Enter the number 2 to display the list of cars"
 echo "Enter the number 3 to quit and exit the program"
 read n;
-car=""
-while [ "$n" -lt "$e" ]
+while [ "$n" -le "$e" ]
 do 
 	
+	echo "Enter the number 1 to enter a new car"
+	echo "Enter the number 2 to display the list of cars"
+	echo "Enter the number 3 to quit and exit the program"
+	read n
 	case "$n" in
 		"1") echo "Enter a year";
 		     read y
@@ -18,11 +21,12 @@ do
  		     read m
 		     echo "Enter a model";
 		     read o
-		     car +=y
+		     car =""
+		     car +=$y
 		     car +=":"
-		     car +=m
+		     car +=$m
 		     car +=":"
-		     car +=o
+		     car +=$o
 		     echo $car >> My_old_cars.txt;;
 		"2") sort My_old_cars.txt
 		     echo cat My_old_cars.txt;;
