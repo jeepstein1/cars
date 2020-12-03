@@ -20,7 +20,7 @@ do
 		     read o
 		     string="$y:$m:$o"
 	
-		     echo $string >> My_old_cars.txt;;
+		     echo $"string" >> My_old_cars.txt;;
 		"2") sort My_old_cars.txt;;
 		"3") echo "Goodbye!";;
 	esac
