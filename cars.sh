@@ -3,7 +3,6 @@
 #Jenny Epstein
 #December 2, 2020
 e=3
-car=
 echo "Enter the number 1 to enter a new car"
 echo "Enter the number 2 to display the list of cars"
 echo "Enter the number 3 to quit and exit the program"
@@ -25,12 +24,10 @@ do
 		     car +=":"
 		     car +=o
 		     echo $car >> My_old_cars.txt;;
-		"2") echo cat My_old_cars.txt;;
+		"2") sort My_old_cars.txt
+		     echo cat My_old_cars.txt;;
 		"3") echo "Goodbye!";;
 	esac
-echo "Enter the number 1 to enter a new car"
-echo "Enter the number 2 to display the list of cars"
-echo "Enter the number 3 to quit and exit the program"
-read n;	
+
 done
 
