@@ -22,7 +22,7 @@ do
 		     echo "Enter a model";
 		     read o
 	
-		     echo $y$m$o >> My_old_cars.txt;;
+		     echo $y:$m:$o >> My_old_cars.txt;;
 		"2") sort My_old_cars.txt
 		     echo cat My_old_cars.txt;;
 		"3") echo "Goodbye!";;
