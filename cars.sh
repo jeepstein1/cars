@@ -7,6 +7,7 @@ echo "Enter the number 1 to enter a new car"
 echo "Enter the number 2 to display the list of cars"
 echo "Enter the number 3 to quit and exit the program"
 read n;
+
 while [ "$n" -lt "$e" ]
 do 
 	
@@ -17,10 +18,14 @@ do
  		     read m
 		     echo "Enter a model";
 		     read o
-		     $car +=y:m:o
-		     echo car >> My_old_cars.txt;;
+		     car +=y:m:o
+		     echo $car >> My_old_cars.txt;;
 		"2") echo cat My_old_cars.txt;;
 		"3") echo "Goodbye!";;
-	esac	
+	esac
+echo "Enter the number 1 to enter a new car"
+echo "Enter the number 2 to display the list of cars"
+echo "Enter the number 3 to quit and exit the program"
+read n;	
 done
 
