@@ -17,12 +17,15 @@ do
 	case "$n" in
 		"1") echo "Enter a year";
 		     read y
+		     string=$y
 		     echo "Enter a make";
  		     read m
+		     string+=$m
 		     echo "Enter a model";
 		     read o
+		     string+=$o
 	
-		     echo $y:$m:$o >> My_old_cars.txt;;
+		     echo string >> My_old_cars.txt;;
 		"2") sort My_old_cars.txt
 		     echo cat My_old_cars.txt;;
 		"3") echo "Goodbye!";;
